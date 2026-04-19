@@ -1,0 +1,43 @@
+import { StyleSheet } from "react-native";
+
+export const C = {
+  purple:      "#a855f7",
+  purpleDark:  "#7c3aed",
+  purpleDeep:  "#4c1d95",
+  pink:        "#ec4899",
+  pinkDark:    "#db2777",
+  orange:      "#f97316",
+  white:       "#FFFFFF",
+  offWhite:    "#f8f5ff",
+  cardBg:      "#fdf4ff",
+  border:      "#e9d5ff",
+  borderLight: "#faf5ff",
+  textDark:    "#1a1a2e",
+  textMid:     "#6b7280",
+  textLight:   "#9ca3af",
+  textPurple:  "#c4b5fd",
+  green:       "#16a34a",
+  greenLight:  "#f0fdf4",
+  amber:       "#d97706",
+  amberLight:  "#fef3c7",
+  red:         "#dc2626",
+  redLight:    "#fef2f2",
+  orange2:     "#f97316",
+};
+
+export const T = StyleSheet.create({
+  screen:    { flex: 1, backgroundColor: C.white },
+  offBg:     { flex: 1, backgroundColor: C.offWhite },
+  row:       { flexDirection: "row", alignItems: "center" },
+  rowBetween:{ flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
+  label:     { fontSize: 11, fontWeight: "900", textTransform: "uppercase", letterSpacing: 1.5, color: C.textPurple, marginBottom: 10 },
+  divider:   { height: 1, backgroundColor: C.borderLight, marginVertical: 4 },
+  emptyWrap: { flex: 1, alignItems: "center", justifyContent: "center", padding: 40 },
+  emptyText: { fontSize: 15, color: C.textPurple, textAlign: "center", fontWeight: "800", lineHeight: 24, marginTop: 10 },
+  card:      { backgroundColor: C.white, borderRadius: 22, marginBottom: 12, overflow: "hidden", borderWidth: 1.5, borderColor: C.border },
+  infoBox:   { backgroundColor: C.offWhite, borderRadius: 16, padding: 14, marginBottom: 12, borderWidth: 2, borderColor: C.border },
+  stepsRow:  { flexDirection: "row", gap: 6, marginBottom: 20 },
+  step:      { flex: 1, height: 4, borderRadius: 50, backgroundColor: "rgba(255,255,255,0.3)" },
+  stepDone:  { backgroundColor: C.white },
+  stepAct:   { backgroundColor: "rgba(255,255,255,0.6)" },
+});
